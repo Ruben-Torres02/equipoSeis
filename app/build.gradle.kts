@@ -35,7 +35,7 @@ android {
         jvmTarget = "11"
     }
     buildFeatures {
-        compose = true
+        dataBinding = true
     }
 }
 
@@ -49,6 +49,15 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+
+    //fragment
+    implementation(libs.androidx.fragment.ktx)
+
+    //navigation
+
+    //lottie
+    implementation ("com.airbnb.android:lottie:3.4.0")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
