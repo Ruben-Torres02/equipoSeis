@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">equipoSeis</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="titulo">DogApp</string>
+
+    <string name="tituloAdministradorCitas">Administrador de citas.</string>
 </resources>
