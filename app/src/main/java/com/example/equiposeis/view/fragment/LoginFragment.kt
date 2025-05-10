@@ -10,30 +10,28 @@ import com.example.equiposeis.databinding.FragmentLoginBinding
 
 class LoginFragment : Fragment() {
 
-    private var _binding: FragmentLoginBinding? = null
-    private val binding get() = _binding!!
+    private lateinit var binding: FragmentLoginBinding
+
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        // Inflamos el layout usando DataBinding
-        _binding = FragmentLoginBinding.inflate(inflater, container, false)
-
-        // Configuramos el click sobre la animación de la huella dactilar
-        binding.lottieView.setOnClickListener {
-            // Acción al tocar la huella
-            Toast.makeText(requireContext(), "Huella detectada", Toast.LENGTH_SHORT).show()
-
-            // Aquí puedes realizar otra lógica, como navegar o validar usuario
-            // Por ejemplo: findNavController().navigate(R.id.action_login_to_home)
-        }
-
+    ): View? {
+        binding = FragmentLoginBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        controladores()
     }
+
+    private fun controladores() {
+        binding.lottieView.setOnClickListener{
+            Toast.makeText(requireContext(), "Huella detectada", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+
 }
