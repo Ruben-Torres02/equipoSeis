@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema principal de la app -->
+    <style name="Theme.EquipoSeis.Legacy" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Aquí tus colores, tipografías y demás items -->
+        <item name="colorPrimary">@color/rosa_principal</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- ... -->
+    </style>
+</resources>
