@@ -40,6 +40,7 @@ android {
 }
 
 dependencies {
+    val navVersion = "2.7.7"
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -55,6 +56,9 @@ dependencies {
     implementation(libs.androidx.fragment.ktx)
 
     //navigation
+    implementation ("androidx.navigation:navigation-fragment-ktx:$navVersion")
+    implementation ("androidx.navigation:navigation-ui-ktx:$navVersion")
+    implementation("androidx.navigation:navigation-common:$navVersion")
 
     //lottie
     implementation ("com.airbnb.android:lottie:3.4.0")
