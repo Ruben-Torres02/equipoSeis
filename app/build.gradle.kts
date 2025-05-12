@@ -2,7 +2,6 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -36,18 +35,13 @@ android {
         jvmTarget = "11"
     }
     buildFeatures {
-        compose = true // Añade esto
-        dataBinding = false // O elimínalo
-    }
-    buildFeatures {
-        viewBinding = true        // <— Actívalo aquí
-        dataBinding = true    // opcional, si no usas DataBinding déjalo en false
+        dataBinding = true
     }
 }
 
 dependencies {
-// Navigation Component (XML Fragments)
-    implementation("androidx.navigation:navigation-compose:2.7.7") // Para Compose
+    val navVersion = "2.7.7"
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -62,13 +56,12 @@ dependencies {
     implementation(libs.androidx.fragment.ktx)
 
     //navigation
-    implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
-    implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
+    implementation ("androidx.navigation:navigation-fragment-ktx:$navVersion")
+    implementation ("androidx.navigation:navigation-ui-ktx:$navVersion")
+    implementation("androidx.navigation:navigation-common:$navVersion")
+
     //lottie
     implementation ("com.airbnb.android:lottie:3.4.0")
-
-// Material Components
-    implementation("com.google.android.material:material:1.9.0")
 
     //biometric
     implementation ("androidx.biometric:biometric:1.1.0")
@@ -81,7 +74,4 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-
-    implementation("com.google.android.material:material:1.9.0")
-
 }
