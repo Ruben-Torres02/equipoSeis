@@ -1,39 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.equiposeis.view.fragment.LoginFragment"
-        android:label="Login">
-        <action
-            android:id="@+id/action_login_to_home"
-            app:destination="@id/homeFragment"
-            app:popUpTo="@id/loginFragment"
-            app:popUpToInclusive="true"/>
-    </fragment>
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login"
+        >
 
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.equiposeis.view.fragment.HomeFragment"
-        android:label="Home">
-        <action
-            android:id="@+id/action_home_to_newCita"
-            app:destination="@id/newCitaFragment"/>
-    </fragment>
-
-    <fragment
-        android:id="@+id/newCitaFragment"
-        android:name="com.example.equiposeis.view.fragment.NewCitaFragment"
-        android:label="Nueva Cita">
-        <action
-            android:id="@+id/action_newCita_to_home"
-            app:destination="@id/homeFragment"
-            app:popUpTo="@id/homeFragment"
-            app:popUpToInclusive="true"/>
-    </fragment>
-
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
 </navigation>
