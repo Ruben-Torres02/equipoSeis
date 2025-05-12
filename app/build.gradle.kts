@@ -51,6 +51,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation ("com.google.android.material:material:1.11.0")
 
     //fragment
     implementation(libs.androidx.fragment.ktx)
