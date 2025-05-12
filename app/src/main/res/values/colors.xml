@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gris_oscuro">#393d42</color>
     <color name="rosado">#F05861</color>
+    <color name="backgroundColorItem">#FFFFFFFF</color>
 </resources>

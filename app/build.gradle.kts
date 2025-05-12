@@ -68,6 +68,21 @@ dependencies {
     implementation ("androidx.biometric:biometric:1.1.0")
     implementation(libs.androidx.credentials)
 
+    //RecyclerView
+    implementation("androidx.recyclerview:recyclerview:1.3.1")
+
+    //viewmodel
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+    implementation ("androidx.activity:activity-ktx:1.8.0")
+    implementation ("androidx.fragment:fragment-ktx:1.6.2")
+
+    //cardView
+    implementation("androidx.cardview:cardview:1.0.0")
+
+    //imagencirucular
+    implementation ("com.google.android.material:material:1.11.0")
+
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
