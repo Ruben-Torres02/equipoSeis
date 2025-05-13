@@ -1,7 +1,23 @@
 <resources>
     <string name="app_name">equipoSeis</string>
-
     <string name="titulo">DogApp</string>
-
     <string name="tituloAdministradorCitas">Administrador de citas.</string>
+    <string name="Cita">Nueva Cita.</string>
+    <string name="nombre_mascota">Nombre de la mascota</string>
+    <string name="nombre_propietatio">Nombre del propietario</string>
+    <string name="raza">Raza</string>
+    <string name="telefono">Telefono</string>
+    <string name="pagina_anterior">icono pagina anterior</string>
+    <string name="campo_texto_info">Campo de texto para ingresar info</string>
+
+    <string-array name="sintomasMascota">
+
+        <item>tiene garrapatas</item>
+        <item>Solo duerme</item>
+        <item>No come</item>
+        <item>Fractura extremidad</item>
+        <item>Tiene pulgas</item>
+        <item>Bota demasiado pelo</item>
+
+    </string-array>
 </resources>
