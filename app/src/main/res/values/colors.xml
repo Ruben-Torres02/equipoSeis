@@ -10,4 +10,6 @@
     <color name="gris_oscuro">#393d42</color>
     <color name="rosado">#F05861</color>
     <color name="backgroundColorItem">#FFFFFFFF</color>
+    <color name="input_text_color">#212121</color>
+    <color name="input_background_color">#FFFFFF</color>
 </resources>
